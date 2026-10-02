@@ -110,33 +110,16 @@ export default function Sidebar() {
         </div>
 
         {/* System & Architecture Info Card */}
-        <div className="p-3.5 bg-zinc-50 rounded-xl border border-zinc-200 text-xs space-y-2">
-          <div className="flex items-center gap-2 font-semibold text-black">
-            <IconLockCheck className="w-4 h-4 text-indigo-600" />
-            Optimistic Locking
-          </div>
-          <p className="text-xs text-zinc-600 leading-relaxed">
-            Atomic version check guarantees edits never overwrite newer data concurrently.
-          </p>
-          <div className="pt-2 border-t border-zinc-200 flex items-center justify-between text-xs text-zinc-600">
-            <span className="flex items-center gap-1 font-medium">
-              <IconServer className="w-3.5 h-3.5 text-emerald-600" />
-              API Status
-            </span>
-            <span className="font-mono text-emerald-600 font-semibold">
-              Ready (v1)
-            </span>
-          </div>
-        </div>
+        
       </div>
 
       {/* Footer Info */}
-      <div className="pt-4 border-t border-zinc-200 text-xs text-zinc-500 flex items-center justify-between">
+      {/* <div className="pt-4 border-t border-zinc-200 text-xs text-zinc-500 flex items-center justify-between">
         <span>Nosh Assignment</span>
         <span className="font-mono text-xs bg-zinc-100 text-zinc-700 border border-zinc-200 px-2 py-0.5 rounded-md">
           v1.0.0
         </span>
-      </div>
+      </div> */}
     </aside>
   );
 }

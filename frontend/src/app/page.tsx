@@ -67,12 +67,10 @@ export default function DashboardPage() {
           {/* Header Banner */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-zinc-200">
             <div>
-              <h2 className="text-2xl font-bold tracking-tight text-black">
+              <h2 className="text-2xl font-semibold tracking-tight text-black">
                 Menu Items & Drafts
               </h2>
-              <p className="text-sm text-zinc-600 mt-1">
-                Local draft editing with atomic optimistic concurrency control (OCC).
-              </p>
+              
             </div>
 
             {/* Unsaved Edits Notification Badge */}

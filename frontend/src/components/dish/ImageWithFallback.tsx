@@ -36,7 +36,7 @@ export default function ImageWithFallback({ src, alt, className = '' }: ImageWit
       <img
         src={src}
         alt={alt}
-        className={`w-full h-full object-cover transition-opacity duration-300 ${
+        className={`w-full h-full object-cover hover:scale-110 transition-all duration-300 ${
           isLoading ? 'opacity-0' : 'opacity-100'
         }`}
         onLoad={() => setIsLoading(false)}

@@ -112,17 +112,17 @@ export default function DishCard({ dish, draft }: DishCardProps) {
           </div>
 
           {/* Bottom Overlay Badges */}
-          <div className="absolute bottom-3 inset-x-3 flex items-center justify-between pointer-events-none">
+          <div className="absolute bottom-3  inset-x-3 flex items-center justify-between pointer-events-none">
             {/* Live Published Status Pill */}
             <span
               className={`pointer-events-auto inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold shadow-sm border ${
                 dish.isPublished
-                  ? 'bg-emerald-600 text-white border-emerald-700'
+                  ? 'bg-emerald-600 text-white border-emerald-'
                   : 'bg-zinc-800 text-white border-zinc-700'
               }`}
             >
               <span
-                className={`w-2 h-2 rounded-full ${
+                className={`w-2  rounded-full ${
                   dish.isPublished ? 'bg-emerald-300 animate-pulse' : 'bg-zinc-400'
                 }`}
               />
@@ -211,7 +211,7 @@ export default function DishCard({ dish, draft }: DishCardProps) {
                 value={currentDraft.dishName}
                 onChange={handleNameChange}
                 disabled={currentDraft.isSaving}
-                className={`w-full px-3.5 py-2.5 text-base font-medium bg-white rounded-xl border transition-all focus:outline-none focus:ring-2 ${
+                className={`w-full px-3.5 py-1 text-base font-medium bg-white rounded-xl border transition-all focus:outline-none focus:ring-2 ${
                   currentDraft.dishName !== dish.dishName
                     ? 'border-indigo-500 ring-1 ring-indigo-500 text-black'
                     : 'border-zinc-300 text-black focus:border-black focus:ring-black'
