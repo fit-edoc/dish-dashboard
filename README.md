@@ -75,14 +75,14 @@ full stack intern/
 ### Backend (`backend/.env`):
 Create a `backend/.env` file (reference `backend/.env.example`):
 ```env
-PORT=3000
+PORT=8000
 MONGODB_URI=your_mongodb_connection_string
 ```
 
 ### Frontend (`frontend/.env.local`):
 Create a `frontend/.env.local` file (reference `frontend/.env.example`):
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:3000
+NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
 ---
